@@ -1,0 +1,41 @@
+/* Heading styles */
+.heading_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.heading_subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* rest of body content */
+/* Categories Styles */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .category {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .category:hover {
+    border-color: #007bff;
+  }
+  
+  .selectedCategory {
+    border-color: #007bff;
+  }

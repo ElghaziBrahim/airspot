@@ -1,0 +1,109 @@
+/* navbar.module.css */
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  
+  .logo_container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo_image {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .search_contrainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+  }
+  
+  .add_guests {
+    color: #333333;
+  }
+  
+  .search_icon {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .rent {
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .userMenu_container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuIcon_Avatar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .menu_icon {
+    margin-right: 10px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+  }
+  
+  .openedMenu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .menu_item {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #333333;
+  }
+  
+  /* Media Query for mid-size screens */
+  @media (max-width: 992px) {
+    .search_contrainer .search {
+      display: none;
+    }
+  }
+  
+  /* Media Query for small screens */
+  @media (max-width: 768px) {
+    .search_contrainer .search {
+      display: none;
+    }
+    .rent {
+      display: none;
+    }
+  }
+  

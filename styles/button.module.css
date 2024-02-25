@@ -1,0 +1,49 @@
+/* button.module.css */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button_small {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .button_outline {
+    background-color: transparent;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+  }
+  
+  .button_outline:hover {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .button_noOutline {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .button_noOutline:hover {
+    background-color: #357a38;
+  }
+  
+  .button_icon {
+    margin-right: 8px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .button {
+      font-size: 14px;
+    }
+  }
+  

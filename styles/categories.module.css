@@ -1,0 +1,49 @@
+.categories {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    gap: 10px;
+    /* Adjust the gap between categories */
+    padding: 10px;
+    /* Add padding for better spacing */
+    align-items: center;
+    /* Center align items vertically */
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.1s ease;
+}
+
+.category:hover {
+    background-color: #0b7af1;
+
+    /* Change background color on hover */
+}
+
+.selected {
+    background-color: #007bff;
+    /* Change background color for selected category */
+    color: #fff;
+    /* Change text color for selected category */
+}
+
+.icon {
+    margin-bottom: 5px;
+    /* Adjust icon spacing */
+}
+
+.label {
+    font-size: 14px;
+    /* Adjust label font size */
+    text-align: center;
+    /* Center align label */
+}
