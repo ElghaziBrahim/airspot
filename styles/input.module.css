@@ -1,45 +1,58 @@
-
 .input_container {
   position: relative;
-}
-
-.input_container svg {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10px; /* Adjust this value as needed */
+  margin-bottom: 20px;
 }
 
 .input {
-  box-sizing: border-box; 
-
+  box-sizing: border-box;
   width: 100%;
-  padding: 12px 16px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 16px;
   transition: border-color 0.3s ease;
-  margin-bottom: 10px;
 }
 
 .input:focus {
-  outline: none;
-  border-color: #007bff; /* Change to your preferred focus color */
+  border-color: #007bff;
 }
 
 .input_label {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 16px;
-  color: #777;
+  transform: translateY(-50%);
+  color: #999;
   font-size: 16px;
-  transition: top 0.3s, font-size 0.3s, color 0.3s;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 
 .input:focus + .input_label,
 .input:not(:placeholder-shown) + .input_label {
-  top: 6px;
+  top: 10px;
   font-size: 12px;
-  color: #007bff; /* Change to your preferred label color */
+  color: #007bff;
+}
+
+.form_dolarSign {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+  .input {
+    font-size: 14px;
+  }
+  
+  .input_label {
+    font-size: 14px;
+  }
+  
+  .form_dolarSign {
+    display: none;
+  }
 }

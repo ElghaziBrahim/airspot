@@ -1,0 +1,69 @@
+/* Counter.module.css */
+
+.container {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    text-align: start;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666; /* Medium gray text color */
+    text-align: start;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control {
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text color */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.control:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+}
+
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 15px;
+    color: #333; /* Dark text color */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .controls {
+        margin-top: 10px;
+    }
+}

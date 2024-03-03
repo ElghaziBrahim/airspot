@@ -9,7 +9,7 @@ export type SafeUser = Omit<
     emailVerified: string | null;
 };
 
-export type CountrySelectVakue = {
+export type CountrySelectValue = {
     flag: string,
     label: string,
     latlng: number[],

@@ -47,9 +47,13 @@ const Input: React.FC<InputProps> = ({
                 placeholder=" "
 
             />
-            <label className={styles.input_label} >
-                {label}
-            </label>
+            {!formatPrice && (
+                <label className={styles.input_label} >
+                    {label}
+                </label>
+            )
+            }
+
         </div>
     )
 }
