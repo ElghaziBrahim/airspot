@@ -71,8 +71,11 @@ const RentModal = () => {
                 setStep(STEPS.CATEGORY)
                 rentModel.onClose()
             })
-            .catch(()=>{
+            .catch(() => {
                 toast.error("something went wrong")
+            })
+            .finally(() => {
+                setIsLoading(false)
             })
 
 
@@ -282,8 +285,7 @@ const RentModal = () => {
         <Modal
             isOpen={rentModel.isOpen}
             onClose={rentModel.onClose}
-            onSubmit={onNext}
-            /* onSubmit={handleSubmit(onSubmit)} */
+            onSubmit={handleSubmit(onSubmit)}
             title="rent"
             body={bodyContent}
             /* footer={footerContent}  */
