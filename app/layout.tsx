@@ -32,8 +32,10 @@ export default async function RootLayout({
 
 
         <Navbar currentUser={currentUser} />
+        <div>
+          {children}
+        </div>
 
-        {children}
       </body>
     </html>
   )

@@ -58,6 +58,8 @@
   .userMenu_container {
     display: flex;
     align-items: center;
+    z-index: 10;
+
   }
   
   .menuIcon_Avatar {

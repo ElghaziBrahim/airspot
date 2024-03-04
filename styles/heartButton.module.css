@@ -1,0 +1,54 @@
+/* heartButton.module.css */
+
+.heartButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.heartButton:hover {
+  transform: scale(1.1);
+}
+
+.emptyHeart,
+.heartFill {
+  transition: color 0.3s ease;
+}
+
+.emptyHeart {
+  color: black;
+}
+
+.heartFill {
+  color: red;
+}
+
+
+
+.emptyHeart:hover {
+  color: #e74c3c;
+}
+
+.heartFill:hover {
+  color: black
+}
+
+
+/* Customize styles for different screen sizes */
+@media only screen and (max-width: 768px) {
+
+  .emptyHeart,
+  .heartFill {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .emptyHeart,
+  .heartFill {
+    font-size: 20px;
+  }
+}
